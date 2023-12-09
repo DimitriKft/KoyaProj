@@ -19,17 +19,17 @@ class WodsViewModel: ObservableObject {
     func fetchData() {
         db.collection("wods").addSnapshotListener { (querySnapshot, error) in
             if let error = error {
-                print("Error getting documents: \(error)")
+                print("Erreur obtention documents: \(error)")
                 return
             }
             guard let documents = querySnapshot?.documents else {
-                print("No documents")
+                print("Aucun documents trouvé")
                 return
             }
             self.wods = documents.compactMap { (queryDocumentSnapshot) -> Wod? in
                 return try? queryDocumentSnapshot.data(as: Wod.self)
             }
-            print("Loaded \(self.wods.count) wods")
+            print("Récupération de \(self.wods.count) wods")
         }
     }
 }

@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		27A6E9C82B232CE4003FCA1D /* KoyaProjApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A6E9C72B232CE4003FCA1D /* KoyaProjApp.swift */; };
-		27A6E9CA2B232CE4003FCA1D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A6E9C92B232CE4003FCA1D /* ContentView.swift */; };
+		27A6E9CA2B232CE4003FCA1D /* WodsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A6E9C92B232CE4003FCA1D /* WodsListView.swift */; };
 		27A6E9CC2B232CE5003FCA1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27A6E9CB2B232CE5003FCA1D /* Assets.xcassets */; };
 		27A6E9CF2B232CE5003FCA1D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27A6E9CE2B232CE5003FCA1D /* Preview Assets.xcassets */; };
 		27A6E9D62B232CF2003FCA1D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 27A6E9D52B232CF2003FCA1D /* GoogleService-Info.plist */; };
@@ -47,7 +47,7 @@
 /* Begin PBXFileReference section */
 		27A6E9C42B232CE4003FCA1D /* KoyaProj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KoyaProj.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27A6E9C72B232CE4003FCA1D /* KoyaProjApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoyaProjApp.swift; sourceTree = "<group>"; };
-		27A6E9C92B232CE4003FCA1D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		27A6E9C92B232CE4003FCA1D /* WodsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WodsListView.swift; sourceTree = "<group>"; };
 		27A6E9CB2B232CE5003FCA1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		27A6E9CE2B232CE5003FCA1D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		27A6E9D52B232CF2003FCA1D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -116,7 +116,7 @@
 			children = (
 				27A6E9C72B232CE4003FCA1D /* KoyaProjApp.swift */,
 				27A6E9D52B232CF2003FCA1D /* GoogleService-Info.plist */,
-				27A6E9C92B232CE4003FCA1D /* ContentView.swift */,
+				27A6E9C92B232CE4003FCA1D /* WodsListView.swift */,
 				27A6EA0E2B235986003FCA1D /* SwiftUIView.swift */,
 				27A6E9CB2B232CE5003FCA1D /* Assets.xcassets */,
 				27A6E9CD2B232CE5003FCA1D /* Preview Content */,
@@ -236,7 +236,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27A6E9CA2B232CE4003FCA1D /* ContentView.swift in Sources */,
+				27A6E9CA2B232CE4003FCA1D /* WodsListView.swift in Sources */,
 				27A6E9C82B232CE4003FCA1D /* KoyaProjApp.swift in Sources */,
 				27A6EA132B24A340003FCA1D /* Wod.swift in Sources */,
 				27A6EA0F2B235986003FCA1D /* SwiftUIView.swift in Sources */,

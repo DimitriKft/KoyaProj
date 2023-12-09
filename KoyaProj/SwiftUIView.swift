@@ -7,38 +7,12 @@
 
 import SwiftUI
 
-import SwiftUI
-
-struct Test: View {
-    @State var tests = [
-        Testeu(title: "Restau1"),
-        Testeu(title: "Restau2")
-    ]
-
+struct SwiftUIView: View {
     var body: some View {
-        List($tests) { $test in
-            HStack {
-                Text(test.title)
-                Button(action: {
-                    test.fav.toggle()
-                }, label: {
-                    Image(systemName: test.fav ? "heart.fill" : "heart")
-                        .foregroundColor(test.fav ? .red : .none)
-                })
-            }
-        }
+        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
 
-struct Testeu: Identifiable {
-    var id = UUID()
-    var title: String
-    var fav: Bool = false
+#Preview {
+    SwiftUIView()
 }
-
-struct Test_Previews: PreviewProvider {
-    static var previews: some View {
-        Test()
-    }
-}
-

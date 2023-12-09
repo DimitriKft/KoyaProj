@@ -6,10 +6,11 @@
 //
 
 import SwiftUI
+import Firebase
+import FirebaseFirestoreSwift
 
-
-struct WODsView: View {
-    @ObservedObject private var viewModel = WODsViewModel()
+struct WodsView: View {
+    @ObservedObject private var viewModel = WodsViewModel()
 
     var body: some View {
         List(viewModel.wods) { wod in
@@ -27,42 +28,9 @@ struct WODsView: View {
 
 
 #Preview {
-    WODsView()
-}
-
-import Firebase
-import FirebaseFirestoreSwift
-
-class WODsViewModel: ObservableObject {
-    @Published var wods = [WOD]()
-
-    private var db = Firestore.firestore()
-
-    func fetchData() {
-        db.collection("wods").addSnapshotListener { (querySnapshot, error) in
-            if let error = error {
-                print("Error getting documents: \(error)")
-                return
-            }
-            guard let documents = querySnapshot?.documents else {
-                print("No documents")
-                return
-            }
-            self.wods = documents.compactMap { (queryDocumentSnapshot) -> WOD? in
-                return try? queryDocumentSnapshot.data(as: WOD.self)
-            }
-            print("Loaded \(self.wods.count) wods")
-        }
-    }
+    WodsView()
 }
 
 
-
-struct WOD: Identifiable, Codable {
-    @DocumentID var id: String?
-    var title: String
- 
-    // Ajoutez d'autres propriétés selon la structure de vos documents Firestore
-}
 
 

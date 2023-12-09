@@ -40,6 +40,8 @@
 		27A6EA0B2B232E6A003FCA1D /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 27A6EA0A2B232E6A003FCA1D /* FirebaseStorage */; };
 		27A6EA0D2B232E6A003FCA1D /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 27A6EA0C2B232E6A003FCA1D /* FirebaseStorageCombine-Community */; };
 		27A6EA0F2B235986003FCA1D /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A6EA0E2B235986003FCA1D /* SwiftUIView.swift */; };
+		27A6EA112B237499003FCA1D /* WodsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A6EA102B237499003FCA1D /* WodsViewModel.swift */; };
+		27A6EA132B24A340003FCA1D /* Wod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A6EA122B24A340003FCA1D /* Wod.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		27A6E9CE2B232CE5003FCA1D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		27A6E9D52B232CF2003FCA1D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		27A6EA0E2B235986003FCA1D /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		27A6EA102B237499003FCA1D /* WodsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WodsViewModel.swift; sourceTree = "<group>"; };
+		27A6EA122B24A340003FCA1D /* Wod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wod.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +97,7 @@
 		27A6E9BB2B232CE4003FCA1D = {
 			isa = PBXGroup;
 			children = (
+				27A6EA122B24A340003FCA1D /* Wod.swift */,
 				27A6E9C62B232CE4003FCA1D /* KoyaProj */,
 				27A6E9C52B232CE4003FCA1D /* Products */,
 			);
@@ -115,6 +120,7 @@
 				27A6EA0E2B235986003FCA1D /* SwiftUIView.swift */,
 				27A6E9CB2B232CE5003FCA1D /* Assets.xcassets */,
 				27A6E9CD2B232CE5003FCA1D /* Preview Content */,
+				27A6EA102B237499003FCA1D /* WodsViewModel.swift */,
 			);
 			path = KoyaProj;
 			sourceTree = "<group>";
@@ -232,7 +238,9 @@
 			files = (
 				27A6E9CA2B232CE4003FCA1D /* ContentView.swift in Sources */,
 				27A6E9C82B232CE4003FCA1D /* KoyaProjApp.swift in Sources */,
+				27A6EA132B24A340003FCA1D /* Wod.swift in Sources */,
 				27A6EA0F2B235986003FCA1D /* SwiftUIView.swift in Sources */,
+				27A6EA112B237499003FCA1D /* WodsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

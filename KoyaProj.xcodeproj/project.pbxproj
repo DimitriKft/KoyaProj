@@ -42,6 +42,7 @@
 		27A6EA0F2B235986003FCA1D /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A6EA0E2B235986003FCA1D /* SwiftUIView.swift */; };
 		27A6EA112B237499003FCA1D /* WodsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A6EA102B237499003FCA1D /* WodsViewModel.swift */; };
 		27A6EA132B24A340003FCA1D /* Wod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A6EA122B24A340003FCA1D /* Wod.swift */; };
+		27A6EA152B252A9A003FCA1D /* WodDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A6EA142B252A9A003FCA1D /* WodDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		27A6EA0E2B235986003FCA1D /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		27A6EA102B237499003FCA1D /* WodsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WodsViewModel.swift; sourceTree = "<group>"; };
 		27A6EA122B24A340003FCA1D /* Wod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wod.swift; sourceTree = "<group>"; };
+		27A6EA142B252A9A003FCA1D /* WodDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WodDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 				27A6E9C72B232CE4003FCA1D /* KoyaProjApp.swift */,
 				27A6E9D52B232CF2003FCA1D /* GoogleService-Info.plist */,
 				27A6E9C92B232CE4003FCA1D /* WodsListView.swift */,
+				27A6EA142B252A9A003FCA1D /* WodDetailView.swift */,
 				27A6EA0E2B235986003FCA1D /* SwiftUIView.swift */,
 				27A6E9CB2B232CE5003FCA1D /* Assets.xcassets */,
 				27A6E9CD2B232CE5003FCA1D /* Preview Content */,
@@ -240,6 +243,7 @@
 				27A6E9C82B232CE4003FCA1D /* KoyaProjApp.swift in Sources */,
 				27A6EA132B24A340003FCA1D /* Wod.swift in Sources */,
 				27A6EA0F2B235986003FCA1D /* SwiftUIView.swift in Sources */,
+				27A6EA152B252A9A003FCA1D /* WodDetailView.swift in Sources */,
 				27A6EA112B237499003FCA1D /* WodsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

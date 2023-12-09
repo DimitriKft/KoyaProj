@@ -17,47 +17,53 @@ struct WodsListView: View {
         GridItem(.flexible(), spacing: 16),
         GridItem(.flexible(), spacing: 16)
     ]
-
+    
     var body: some View {
-        ScrollView {
-            LazyVGrid(columns: columns, spacing: 16) {
-                ForEach(viewModel.wods) { wod in
-                    VStack {
-                        if let imageUrl = URL(string: wod.image) {
-                            AsyncImage(url: imageUrl) { phase in
-                                switch phase {
-                                case .empty:
-                                    ProgressView()
-                                        .frame(width: 150, height: 150)
-                                case .success(let image):
-                                    image.resizable()
-                                        .resizable()
-                                        .aspectRatio(contentMode: .fill)
-                                        .frame(width: 137, height: 100)
-                                        .clipped()
-                                        .cornerRadius(30)
-                                case .failure:
+        NavigationStack {
+            ScrollView {
+                LazyVGrid(columns: columns, spacing: 16) {
+                    ForEach(viewModel.wods) { wod in
+                        NavigationLink {
+                            WodDetailView(wod: wod)
+                        } label: {
+                            VStack {
+                                if let imageUrl = URL(string: wod.image) {
+                                    AsyncImage(url: imageUrl) { phase in
+                                        switch phase {
+                                        case .empty:
+                                            ProgressView()
+                                                .frame(width: 150, height: 150)
+                                        case .success(let image):
+                                            image.resizable()
+                                                .resizable()
+                                                .aspectRatio(contentMode: .fill)
+                                                .frame(width: 137, height: 100)
+                                                .clipped()
+                                                .cornerRadius(30)
+                                        case .failure:
+                                            Image(systemName: "photo")
+                                                .frame(width: 150, height: 150)
+                                        @unknown default:
+                                            EmptyView()
+                                        }
+                                    }
+                                } else {
                                     Image(systemName: "photo")
                                         .frame(width: 150, height: 150)
-                                @unknown default:
-                                    EmptyView()
                                 }
+                                Text(wod.title)
+                                    .font(.headline)
+                                    .fontWeight(.bold)
                             }
-                        } else {
-                            Image(systemName: "photo")
-                                .frame(width: 150, height: 150)
+                            .padding(.horizontal)
                         }
-                        Text(wod.title)
-                            .font(.headline)
-                            .fontWeight(.bold)
                     }
-                    .padding(.horizontal)
                 }
+                .padding(.horizontal)
             }
-            .padding(.horizontal)
-        }
-        .onAppear() {
-            self.viewModel.fetchData()
+            .onAppear() {
+                self.viewModel.fetchData()
+            }
         }
     }
 }

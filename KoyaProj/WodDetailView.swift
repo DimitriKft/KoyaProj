@@ -42,6 +42,6 @@ struct WodDetailView: View {
     }
 }
 
-#Preview {
-    WodDetailView(wod: Wod(id: "Id", title: "Title", image: "Image"))
-}
+//#Preview {
+//    WodDetailView(wod: Wod(id: "Id", title: "Title", image: "Image"))
+//}

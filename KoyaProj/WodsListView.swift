@@ -54,6 +54,12 @@ struct WodsListView: View {
                                 Text(wod.title)
                                     .font(.headline)
                                     .fontWeight(.bold)
+                                if let bestScore = wod.bestScore {
+                                    Text("Meilleur score: \(bestScore)")
+                                }
+                                if let days = wod.daysSinceLastScore {
+                                    Text("Il y a \(days) jours")
+                                }
                             }
                             .padding(.horizontal)
                         }
